@@ -9,6 +9,6 @@ export class EmitterComponent {
   myNumber = 0
 
   onChangeNumber() {  
-    this.myNumber = Math.floor(Math.random() *10)
+    this.myNumber = Math.floor (Math.random() *10)
   }
 }

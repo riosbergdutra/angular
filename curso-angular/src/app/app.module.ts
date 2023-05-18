@@ -9,6 +9,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { CangeNumberComponent } from './components/cange-number/cange-number.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CangeNumberComponent } from './components/cange-number/cange-number.com
     IfRenderComponent,
     EventosComponent,
     EmitterComponent,
-    CangeNumberComponent
+    CangeNumberComponent,
+    ListRenderComponent
   ],
   imports: [
     BrowserModule

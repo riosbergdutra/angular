@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class IfRenderComponent {
   canShow = true;
-  name = 'Matheu';
+  name = 'Matheus';
 }
