@@ -4,8 +4,14 @@
 <div>
     <a href="#">clique aqui</a>
 </div>
+<!-- estes <app-blablabla-blablabla> serve para o componente pai que é o app.components receber os filhos que são criados com
+    ng generate component "se quiser criar uma pasta especifica coloca nome-da-pasta/nome dos arquivos ex"
+    ng generate component components/parent-date -->
+    
 <app-first-component></app-first-component>
 <app-parent-date [userName] = 'userName' [userData] = "userData"></app-parent-date>
+<!--Compartilhamento de Dados de componente de pai com o filho o [] é do componente filho o '' é do componente pai -->
+
 <app-directives></app-directives>
 <app-if-render></app-if-render>
 <app-eventos></app-eventos>

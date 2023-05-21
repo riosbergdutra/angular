@@ -14,4 +14,5 @@ car = {
  name: 'polo',
  year: 2019,
 };
+// aqui são postas as variaveis e codigos typeScript
 }

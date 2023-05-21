@@ -2,6 +2,8 @@
     <h2>Animais:</h2>
     <ul>
         <li *ngFor="let animal of animals">
+            <!-- *ngFor = "let nome of nomes serve para criar uam variavel nome nas minhas variaveis nomes para ele ser
+                repetido até acabar as minhas variaveis nomes" -->
             Nome: {{animal.name}} - Tipo: {{animal.type}}
             <button (click)="showage(animal)">Show age</button>
         </li>
@@ -9,4 +11,5 @@
     <h3>{{animalDetails}}</h3>
     <p>{{eletronico}}</p>
     <p>{{animal.name}} - {{animal.type}}</p>
+     <!-- estes {{}}} são as variaveis  --> 
 </div>

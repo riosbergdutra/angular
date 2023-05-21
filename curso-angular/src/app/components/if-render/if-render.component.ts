@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class IfRenderComponent {
   canShow = true;
   name = 'Matheus';
+  // dar o valor true ou false para uma variavel quer dizer que
 }
