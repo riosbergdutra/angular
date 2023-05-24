@@ -1,0 +1,14 @@
+<div class="class">
+   <h2>Two way data binding</h2>
+</div>
+<form>
+    <input type="text" [(ngModel)]="name" 
+    name="name"
+    placeholder="Digite o seu nome">
+    <input type="submit" value="Enviar">  <!--necessita criar uma string e colocar ela dentro do [(ngModel)]-->
+    <div *ngIf="name !== ''">
+        <p>O nome é {{name}}</p>
+    </div>
+</form>
+<!-- O Two-way data binding no Angular é uma forma de manter os dados atualizados em ambos os lados: no elemento de entrada (como um campo de formulário) e na propriedade do componente. Ele simplifica o código necessário para manter os dados sincronizados, permitindo que você faça alterações no elemento de entrada e veja essas alterações refletidas automaticamente na propriedade do componente, e vice-versa. Em resumo, ele torna mais fácil e rápido trabalhar com dados entre a interface do usuário e o componente.
+ -->

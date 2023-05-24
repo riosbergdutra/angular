@@ -1,5 +1,8 @@
+// aqui fica os importamentos de components tudo que criar com generate component fica aqui;
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+// este é o formsModulo
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -11,6 +14,7 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { CangeNumberComponent } from './components/cange-number/cange-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +27,13 @@ import { PipesComponent } from './components/pipes/pipes.component';
     EmitterComponent,
     CangeNumberComponent,
     ListRenderComponent,
-    PipesComponent
+    PipesComponent,
+    TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
-  ],
+    BrowserModule, FormsModule 
+  ], // aqui ficam os modulos extras colocando FormsModule agora estamos apto para trabalhar com recursos de formularios do angular
+
   providers: [],
   bootstrap: [AppComponent]
 })
