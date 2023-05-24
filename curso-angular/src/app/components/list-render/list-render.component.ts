@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 
 import { Animal } from 'src/app/animal';
+// interface
+
+import { ListService } from 'src/app/services/list.service';
+//este é o service chamado list-render
 
 @Component({
   selector: 'app-list-render',
@@ -31,4 +35,6 @@ export class ListRenderComponent {
   showage(animal: Animal) {
   this.animalDetails =  `O pet ${animal.name} tem ${animal.age} anos`
   } // o "animal.name" e o "animal.age" serve para dizer que me refiro a array name do animal
+
+ constructor (private listService: ListService) {}
 }
