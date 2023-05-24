@@ -14,5 +14,5 @@ export class ListService {
 
   //"=>" é uma arrow function que serve como um critério de filtro para a função filter. Ela verifica se o nome do animal passado como argumento é diferente do nome de cada elemento a do array animals, e retorna true se a condição for verdadeira, indicando que o elemento deve ser mantido no novo array filtrado.
 
-  //A função filter é usada para criar um novo array com elementos que atendem a um critério específico. Ela filtra os elementos com base em uma função que determina se um elemento deve ser incluído ou não no novo array. É uma forma de selecionar apenas os elementos desejados de um array original.
+  //filter é usada para criar um novo array com elementos que atendem a um critério específico. Ela filtra os elementos com base em uma função que determina se um elemento deve ser incluído ou não no novo array. É uma forma de selecionar apenas os elementos desejados de um array original.
 }
