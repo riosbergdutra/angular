@@ -1,16 +1,26 @@
+<p>header</p>
+<nav>
+    <a routerLink="/">home</a>
+    <a routerLink="/list">Lista</a>
+    <!-- no angular temos algo diferente o href que é o routerLink -->
+    <!-- o / e o /list eu criei lá no app-routing-module.ts -->
+</nav>
 <h1>Hello World Angular!</h1>
-<h2>testando</h2>
-<p>Alguma coisa</p>
-<div>
-    <a href="#">clique aqui</a>
-</div>
+<router-outlet></router-outlet>
+<!-- aonde vai ser exibido os links criados no routerLink -->
+<p>footer</p>
+<!-- o router-outlet é o centro do site -->
+<!-- se tivesse um header e um footer seria deste jeito -->
+
+
+
 <!-- estes <app-blablabla-blablabla> serve para o componente pai que é o app.components receber os filhos que são criados com
     ng generate component "se quiser criar uma pasta especifica coloca nome-da-pasta/nome-dos-arquivos ex"
-    ng generate component components/parent-date -->
+    ng generate component components/parent-date 
  
 <app-first-component></app-first-component>
 <app-parent-date [userName] = 'userName' [userData] = "userData"></app-parent-date>
-<!--Compartilhamento de Dados de componente de pai com o filho o [] é do componente filho o '' é do componente pai -->
+Compartilhamento de Dados de componente de pai com o filho o [] é do componente filho o '' é do componente pai 
 
 <app-directives></app-directives>
 <app-if-render></app-if-render>
@@ -18,4 +28,4 @@
 <app-emitter></app-emitter>
 <app-list-render></app-list-render>
 <app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<app-two-way-binding></app-two-way-binding> -->

@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 // este é o formsModulo
+import { appRoutingModule } from './app-routing-module';
+//coloque-o também no imports ao lado do formsmodule
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -31,7 +33,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule, FormsModule 
+    BrowserModule, FormsModule, appRoutingModule
   ], // aqui ficam os modulos extras colocando FormsModule agora estamos apto para trabalhar com recursos de formularios do angular
 
   providers: [],
