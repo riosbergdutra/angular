@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 // este é o formsModulo
 import { appRoutingModule } from './app-routing-module';
 //coloque-o também no imports ao lado do formsmodule
+import { HttpClientModule } from '@angular/common/http';
+//este é a importação do HttpClientModule precisa ser colocado '@angular/common/http' porque quando começa com @ o angular n faz automaticamente
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -33,7 +35,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule, FormsModule, appRoutingModule
+    BrowserModule, FormsModule, appRoutingModule, HttpClientModule
   ], // aqui ficam os modulos extras colocando FormsModule agora estamos apto para trabalhar com recursos de formularios do angular
 
   providers: [],

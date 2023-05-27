@@ -12,13 +12,7 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent {
-  animals: Animal [] = [
-    {name: "Turca", type: "Dog", age: 4},
-    {name: "Tom", type: 'Cat', age: 10},
-    {name: 'Frida', type: 'Dog', age: 5},   
-    {name: 'Bob', type: 'Horse', age: 1},
-    // este [] é para ARRAYS
-  ]
+  animals: Animal [] = []
 
   eletronico = [
     'Telefone', 'celular', 'computador',
@@ -36,7 +30,9 @@ export class ListRenderComponent {
   this.animalDetails =  `O pet ${animal.name} tem ${animal.age} anos`
   } // o "animal.name" e o "animal.age" serve para dizer que me refiro a array name do animal
 
- constructor (private listService: ListService) {}
+ constructor (private listService: ListService) {
+  this.getAnimals() // para puxar os dados da API é assim
+ }
  // coloque em privado
  // precisa criar um constructor () {} para dar certo o services
  // o angular vai entender que eu automaticamente que eu criei um novo serviço que vai se chamar listService e ele vem de ListService
@@ -50,4 +46,12 @@ export class ListRenderComponent {
   //this.animals array completo;
   //animal parametro "animal especifico";
 }
+
+  getAnimals(): void{
+    this.listService.getAll().subscribe((animals) => (this.animals = animals));
+    //subscribe serve para o evento ser concretizado como se tivesse esperando o evento para realizar alguma coisa
+    // no subscribe tem como fazer algumas coisas com as propriedades do meu componente
+    //estou chamando ele do que eu quero "coloquei animals" e na função faço a atribuição para esssa propriedade 
+  } // quando o elemento é observavel não pode colocar this.animals =
+  //ele acessa o metodo do service
 }
