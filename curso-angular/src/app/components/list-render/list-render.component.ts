@@ -56,4 +56,10 @@ export class ListRenderComponent {
   //ele acessa o metodo do service
 
   //"void" indica que uma função não retorna nenhum valor
+
+  /* Nesse código, estamos chamando a função getAll() do serviço listService, que retorna um objeto do tipo Observable contendo a lista de animais. Em seguida, nos inscrevemos nesse Observable usando o método subscribe().
+
+Dentro da função subscribe(), definimos uma função de retorno que será executada quando os dados dos animais estiverem disponíveis. Essa função recebe a lista de animais como parâmetro e a atribui à propriedade this.animals do componente.
+
+Dessa forma, quando a solicitação para obter todos os animais for concluída com sucesso, a função de retorno será chamada e a lista de animais será atribuída à propriedade this.animals. Isso permite que o componente atualize sua exibição com os dados mais recentes recebidos do servidor.*/
 }
