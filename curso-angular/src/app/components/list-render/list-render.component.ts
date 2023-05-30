@@ -54,4 +54,6 @@ export class ListRenderComponent {
     //estou chamando ele do que eu quero "coloquei animals" e na função faço a atribuição para esssa propriedade 
   } // quando o elemento é observavel não pode colocar this.animals =
   //ele acessa o metodo do service
+
+  //"void" indica que uma função não retorna nenhum valor
 }
