@@ -4,13 +4,13 @@
         <li *ngFor="let animal of animals">
             <!-- *ngFor = "let nome of nomes serve para criar uam variavel nome nas minhas variaveis nomes para ele ser
                 repetido até acabar as minhas variaveis nomes" -->
-            Nome: {{animal.name}} - Tipo: {{animal.type}}
-            <button (click)="showage(animal)">Show age</button>
+            Nome: <a routerLink="/list/{{animal.id}}">{{animal.name}}</a> - Tipo: {{animal.type}}
+            <!-- eu importei no router link para criar um botão de id dos meus animais da minha URL que estão também na minha array de animal -->
+            <!-- fazendo isso todos meus animais contem ids especificos que me levam a pagina de detail -->
+            <button (click)="showAge(animal)">Show age</button>
             <button (click)="removeAnimal(animal)">Excluir</button>
         </li>
     </ul>
-    <h3>{{animalDetails}}</h3>
-    <p>{{eletronico}}</p>
-    <p>{{animal.name}} - {{animal.type}}</p>
-     <!-- estes {{}}} são as variaveis  --> 
+     <h3>{{animalDetails}}</h3>
+    
 </div>

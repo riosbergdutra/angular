@@ -36,4 +36,8 @@ O servidor irá processar a solicitação GET e retornar a lista de animais. A f
 
 O Observable é retornado para permitir que o componente que chama essa função se inscreva no objeto Observable e receba a lista de animais assim que a resposta do servidor estiver disponível. Dessa forma, o componente pode atualizar sua exibição com os dados recebidos do servidor.*/
   }
+  getItem(id:number): Observable<Animal> {
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`)
+    //estou pegando o id do parametro e to jogando na minha URL e fica no final assim tendo o meu animal  
+  }
 }

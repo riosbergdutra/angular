@@ -18,16 +18,12 @@ export class ListRenderComponent {
     'Telefone', 'celular', 'computador',
   ]
 
-    animal: Animal =  {
-    name: 'Teste',
-    type: 'Alguma coisa',
-    age: 2
-  } // este animal: Animal significa que ele recebe o Animal assim como se eu colocasse object, number, string etc...
+   // este animal: Animal significa que ele recebe o Animal assim como se eu colocasse object, number, string etc...
 
-  animalDetails = '' // serve para ser uma variavel para oque estiver escrito ali em baixo deverá ser exibida aqui
+  animalDetails = "" // serve para ser uma variavel para oque estiver escrito ali em baixo deverá ser exibida aqui
 
-  showage(animal: Animal) {
-  this.animalDetails =  `O pet ${animal.name} tem ${animal.age} anos`
+  showAge(animal: Animal) {
+  this.animalDetails =  `O pet ${animal.name} tem ${animal.age}`
   } // o "animal.name" e o "animal.age" serve para dizer que me refiro a array name do animal
 
  constructor (private listService: ListService) {

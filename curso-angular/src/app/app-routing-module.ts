@@ -7,11 +7,13 @@ import { RouterModule, Routes } from "@angular/router";
 // as rotas criadas no componente lá abaixo
 import { FirstComponentComponent } from "./components/first-component/first-component.component";
 import { ListRenderComponent } from "./components/list-render/list-render.component";
+import { ItemDetailComponent } from "./components/item-detail/item-detail.component";
 // criação de uma constante com rotas para caa componente
 const routes: Routes = [
     {path: '', component: FirstComponentComponent},
     //outra rota abaixo
-    {path: 'list', component: ListRenderComponent} 
+    {path: 'list', component: ListRenderComponent},
+    {path: 'list/:id', component: ItemDetailComponent}// desta maneira com /:id cria-se uma rota dinamica (estou dizendo que a rota vai mudar toda vez que será acessada), aqui eles fazem que todos as minhas arrays me levem a esta página
 ] // const é uma variavel na qual n pode ser mudada
 // este é uma array de objetos
 // o "path" no TypeScript serve para especificar a localização correta de arquivos e diretórios, permitindo que você importe e utilize recursos de outros arquivos em seu projeto. Isso ajuda a manter seu código organizado e facilita a reutilização de código em diferentes partes do projeto.
